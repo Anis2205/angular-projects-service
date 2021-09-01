@@ -1,0 +1,11 @@
+<div class="card">
+    <div class="card-header">
+      {{frommainaccount.name}}
+    </div>
+    <div class="card-body">
+      <p class="card-text">This account is {{frommainaccount.status}}</p>
+      <button class="btn btn-default" (click)="onset('active')">set to 'active'</button>
+      <button class="btn btn-default"  (click)="onset('inactive')">set to 'inactive'</button>
+      <button class="btn btn-default"  (click)="onset('unknown')">set to 'unknown'</button>
+    </div>
+  </div>

@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <!-- <app-new-account (addingfromnewacoount)="onaddtoaccounts($event)"></app-new-account> -->
+            <app-new-account></app-new-account>
+        </div>
+    </div><hr>
+    <div class="row">
+        <div class="col-xs-12">
+            <!-- <app-account *ngFor = "let showaccount of accounts; let i = index" 
+            [frommainaccount]="showaccount" 
+            [id]="i"
+            (statuschanged)="onchangedvalue($event)"></app-account> -->
+            <app-account *ngFor = "let showaccount of accounts; let i = index" 
+            [frommainaccount]="showaccount" 
+            [id]="i"
+           ></app-account>
+        </div>
+    </div>
+</div>

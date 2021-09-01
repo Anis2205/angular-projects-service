@@ -1,0 +1,15 @@
+<form>
+    <div class="form-group">
+        <label for="acc-name">Account Name:</label>
+        <input type="text" class="form-control" name="acc-name" #accountname>
+    </div><br>
+    <div class="form-group">
+        <label for="acc-status">Select Status:</label>
+        <select class="form-control" name="acc-status" [(ngModel)]="accountstatus">
+            <option>Active</option>
+            <option>Inactive</option>
+            <option>Unknown</option>
+        </select>
+    </div><br>
+    <button type="submit" class="btn btn-primary" (click)="onaddaccount()">Add Account</button>
+</form>
